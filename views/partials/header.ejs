@@ -1,0 +1,18 @@
+<header>
+  <nav class="header-nav">
+    <a class="header-title" href="/">BookNook</a>
+    <ul class="block_content">
+      <li><a href="/books">Books</a></li>
+      <li><a href="/books/new">Add Books</a></li>
+      <li><a href="/authors">Authors</a></li>
+      <li><a href="/authors/new">Add Authors</a></li>
+    </ul>
+    <div class="log">
+      <% if(typeof user!== 'undefined'&& user) { %>
+      <li><a href="/logout">Logout</a></li>
+      <% } else { %>
+      <li><a href="/login">Login</a></li>
+      <% } %>
+    </div>
+  </nav>
+</header>
