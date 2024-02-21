@@ -33,7 +33,7 @@ exports.oneauthor = async (req, res) => {
       booksByAuthor: books,
     });
   } catch (err) {
-    console.log(err);
+    console.log("error", err);
     res.redirect("/");
   }
 };

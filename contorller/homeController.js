@@ -2,7 +2,6 @@
 const Books = require("../models/bookModel");
 
 exports.homepage = async (req, res) => {
-  console.log(res.user);
   let books;
   try {
     books = await Books.find()

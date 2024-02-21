@@ -9,11 +9,7 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
-mongose
-  .connect(DB, {
-    useNewUrlParser: true,
-  })
-  .then(() => console.log("connected to the database"));
+mongose.connect(DB, {}).then(() => console.log("connected to the database"));
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("server running on port");
